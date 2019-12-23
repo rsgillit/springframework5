@@ -1,4 +1,4 @@
-package com.gill.sfgpetclinic.model;
+package sfgpetclinic.model;
 
 public class Person {
 

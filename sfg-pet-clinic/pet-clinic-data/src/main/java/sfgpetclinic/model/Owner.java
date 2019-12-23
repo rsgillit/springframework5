@@ -1,4 +1,4 @@
-package com.gill.sfgpetclinic.model;
+package sfgpetclinic.model;
 
 public class Owner extends Person {
     public Owner(String firstName, String lastName) {
