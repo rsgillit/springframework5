@@ -8,10 +8,9 @@ public class RandomQuotesServiceImpl implements RandomQuotesService {
 
     public final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public RandomQuotesServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public RandomQuotesServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
     }
-
 
     public String getRandomJoke() {
         return chuckNorrisQuotes.getRandomQuote();
