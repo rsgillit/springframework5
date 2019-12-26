@@ -1,6 +1,7 @@
 package com.gill.spring5recipeapp.domain;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Recipe {
@@ -16,12 +17,16 @@ public class Recipe {
     private String source;
     private String url;
     private String directions;
+    //private Difficulty difficulty
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
+    private Set<Ingredient> ingredients;
 
     @Lob
     private Byte[] image;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "note_id", referencedColumnName = "id")
+    //@JoinColumn(name = "note_id", referencedColumnName = "id")
     private Notes notes;
 
     public Long getId() {
