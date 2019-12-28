@@ -1,5 +1,6 @@
 package com.gill.sfgpetclinic.services.map;
 
+import com.gill.sfgpetclinic.model.Person;
 import com.gill.sfgpetclinic.model.Speciality;
 import com.gill.sfgpetclinic.model.Vet;
 import com.gill.sfgpetclinic.services.SpecialityService;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService<Person, Number> {
 
     private final SpecialityService specialityService;
 
