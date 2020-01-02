@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class Spring5RecipeAppApplicationTests {
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
     }
 
 }
