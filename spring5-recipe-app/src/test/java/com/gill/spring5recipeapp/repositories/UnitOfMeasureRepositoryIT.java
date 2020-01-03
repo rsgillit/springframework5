@@ -1,6 +1,7 @@
 package com.gill.spring5recipeapp.repositories;
 
 import com.gill.spring5recipeapp.domain.UnitOfMeasure;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
