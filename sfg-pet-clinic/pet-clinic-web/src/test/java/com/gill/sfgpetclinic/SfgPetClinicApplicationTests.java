@@ -13,4 +13,9 @@ class SfgPetClinicApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    void test() {
+        assert (true);
+    }
+
 }
